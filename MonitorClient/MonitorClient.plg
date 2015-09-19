@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MonitorClient - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/MonitorClient.res" /d "NDEBUG" /d "_AFXDLL" "C:\Users\YOUNIAN\Desktop\Monitor自动版\MonitorClient\MonitorClient.rc"" 
+Creating temporary file "C:\Users\YOUNIAN\AppData\Local\Temp\RSPA104.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/MonitorClient.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\YOUNIAN\Desktop\Monitor自动版\MonitorClient\MonitorClient.cpp"
+"C:\Users\YOUNIAN\Desktop\Monitor自动版\MonitorClient\MonitorClientDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\YOUNIAN\AppData\Local\Temp\RSPA104.tmp" 
+Creating temporary file "C:\Users\YOUNIAN\AppData\Local\Temp\RSPA105.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/MonitorClient.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\YOUNIAN\Desktop\Monitor自动版\MonitorClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\YOUNIAN\AppData\Local\Temp\RSPA105.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/MonitorClient.pdb" /machine:I386 /out:"Release/MonitorClient.exe"  ".\Release\MonitorClient.obj" ".\Release\MonitorClientDlg.obj" ".\Release\StdAfx.obj" ".\Release\MonitorClient.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MonitorClient.cpp
+MonitorClientDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MonitorClient.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

